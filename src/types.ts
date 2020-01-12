@@ -1,10 +1,10 @@
-export type onResult = (decodeResults: DecodedResult[], readerProperties: ReaderProperties, output: Output) => void;
-export type onGenerateFTPFilename = (
+export type onResultFn = (decodeResults: DecodedResult[], readerProperties: ReaderProperties, output: Output) => void;
+export type onGenerateFTPFilenameFn = (
     decodeResults: DecodedResult[],
     readerProperties: ReaderProperties,
     output: Output
 ) => void;
-export type onGenerateFTPPCMReportFilename = (
+export type onGenerateFTPPCMReportFilenameFn = (
     decodeResults: DecodedResult[],
     readerProperties: ReaderProperties,
     output: Output
